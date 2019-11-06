@@ -1,12 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const createHash = require("create-hash");
-const Buffer = require('buffer/').Buffer
+
 const INVALID_MNEMONIC = 'Invalid mnemonic';
 const INVALID_ENTROPY = 'Invalid entropy';
 const INVALID_CHECKSUM = 'Invalid mnemonic checksum';
 const WORDLIST_REQUIRED = 'A wordlist is required but a default could not be found.\n' +
     'Please explicitly pass a 2048 word array explicitly.';
+
+var createHash = require('react-native-crypto').createHash;
+var Buffer = require('safe-buffer').Buffer;
+
 function normalize(str) {
     return (str || '').normalize('NFKD');
 }
