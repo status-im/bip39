@@ -36,6 +36,7 @@
   ],
   "dependencies": {
     "@types/node": "11.11.6",
+    "buffer": "^5.4.3",
     "create-hash": "^1.1.0",
     "stream": "^0.0.2"
   },
